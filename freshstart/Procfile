@@ -1,0 +1,1 @@
+web: gunicorn freshstart.wsgi --log-file -
