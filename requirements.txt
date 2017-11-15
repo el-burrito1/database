@@ -3,3 +3,4 @@ Django==1.11.4
 pandas==0.18.1
 pathlib2==2.1.0
 gunicorn==19.6.0
+dj-database-url==0.2.1
