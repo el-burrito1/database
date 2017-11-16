@@ -25,7 +25,7 @@ SECRET_KEY = '3_@0k0(m06#dr@r_z+c12%l4c(m_m*9v2)4i!os$j!1#=46xyr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['demo-freshstart.herokuapp.com']
+ALLOWED_HOSTS = ['demo-freshstart.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -84,11 +84,13 @@ WSGI_APPLICATION = 'freshstart.wsgi.application'
 # DATABASES['default'] =  dj_database_url.config()
 
 import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
-    )
-}
+DATABASES = {'default' : dj_database_url.config()}
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
+#     )
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
